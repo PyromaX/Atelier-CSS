@@ -1,3 +1,49 @@
 <template name="header">
+    <div class="hide-on-med-and-down">
+        {{>desktopHeader}}
+    </div>
+    <div class="hide-on-large-only">
+        {{>mobileHeader}}
+    </div>
+</template>
+
+<template name="mobileHeader">
+    <header class="black">
+        <nav class="black">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">WikiC<span  class="material-icons red-text accent-2">brightness_1</span>da</a>
+                    <ul id="slide-out" class="side-nav" style="background-color: rgba(0, 0, 0, 0.6);">
+                        <li class="active red accent-2"><a href="#" class="white-text">Accueil</a></li>
+                        <li><a href="#" class="white-text">A Propos</a></li>
+                        <li><a href="#" class="white-text">Service</a></li>
+                        <li><a href="#" class="white-text">Portfolio</a></li>
+                        <li><a href="#"><i class="material-icons white-text">mail_outline</i></a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</template>
+
+<template name="desktopHeader">
+<header class="black">
+    <nav class="black">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo">WikiC<span  class="material-icons red-text accent-2">brightness_1</span>da</a>
+                <ul id="nav-mobile " class="right">
+                    <li class="active red accent-2"><a href="#">Accueil</a></li>
+                    <li><a href="#">A Propos</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
 </template>

@@ -1,1 +1,25 @@
 /* CSS declarations go here */
+section, .row {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.blue-bg-img {
+    background-image: url("/images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ .yolo{
+     margin-top: -6px;
+     z-index: 200;
+ }
+ p{
+     color: grey;
+ }
+
+ .s12 {
+     text-align: center;
+ }
